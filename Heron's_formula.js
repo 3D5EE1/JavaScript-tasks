@@ -9,12 +9,13 @@
 // вещественное число, соответствующее площади треугольника.
 
 
-var a = Number(prompt());
-var b = Number(prompt());
-var c = Number(prompt());
-var p, s;
+var Heron = {};
 
-p = (a + b + c) / 2;
-s = Math.sqrt((p - a) * (p - b) * (p - c) * p);
+Heron.a = Number(prompt());
+Heron.b = Number(prompt());
+Heron.c = Number(prompt());
 
-alert(s);
+Heron.p = (Heron.a + Heron.b + Heron.c) / 2;
+Heron.s = Math.sqrt((Heron.p - Heron.a) * (Heron.p - Heron.b) * (Heron.p - Heron.c) * Heron.p);
+
+alert(Heron.s);
